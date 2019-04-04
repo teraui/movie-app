@@ -1,0 +1,19 @@
+.movie-details__header {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  background-image: linear-gradient(to right bottom, #77ff00, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+  margin: 20px 0;
+  display: block;
+}
+
+.movie-details__header:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}

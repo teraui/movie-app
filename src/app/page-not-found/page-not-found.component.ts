@@ -1,14 +1,14 @@
 import {ChangeDetectionStrategy, Component} from "@angular/core";
 
 @Component({
-  selector: "app-root",
+  selector: "app-page-not-found",
   template: `
-    <div class="movie-app">
-      <router-outlet></router-outlet>
+    <div>
+      <h1>Page Not Found</h1>
     </div>
   `,
-  styleUrls: ["./app.component.css"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
+export class PageNotFoundComponent {
+  constructor() {}
 }
