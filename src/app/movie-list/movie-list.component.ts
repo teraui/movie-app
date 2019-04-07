@@ -13,7 +13,8 @@ import {CinemaTypes} from "../models/cinema-types.enum";
       <h1 class="movie-list__header">Movie List</h1>
       <app-movie-list-filter [currentCinemaType]="currentCinemaType"></app-movie-list-filter>
       <div *ngIf="movieList$ | async as movieList; else loading" class="movie-list__content">
-        <ul class="movie-list__content-list">
+        <div *ngIf="!movieList.length">No content</div>
+        <ul *ngIf="movieList.length" class="movie-list__content-list">
           <app-movie-list-item *ngFor="let movieListItem of movieList" [item]="movieListItem"></app-movie-list-item>
         </ul>
       </div>
